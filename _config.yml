@@ -1,18 +1,22 @@
-title: 'SQLFlow'
-description: Bridging Data and AI
+remote_theme: pmarsceill/just-the-docs
 
-permalink: pretty
-exclude: ['*.sql', '*.go', '.gitignore', '*.sh', '*.proto', '*.y', '*.py', 'vendor', 'gohive/doc/design.md', 'gohive/docker/README.md', 'pysqlflow/doc/design/client_design_doc.md', 'pysqlflow/doc/design/magic_design_doc.md', 'sqlflow/doc/mysql-setup.md', 'sqlflow/doc/tutorial/aspara2019/', 'sqlflow/python/README.md', 'sqlflow/parser/README.md', 'sqlflow/parser/remote/README.md', 'sqlflow/parser/remote/hiveql/README.md', 'sqlflow/scripts/markdown_link_check/README.md', 'sqlflow/pkg/sql/codegen/xgboost/README.md', 'sqlflow/doc/model_parameter.md', 'sqlflow/doc/argo-setup.md', 'sqlflow/doc/design/ant_xgboost.md', 'sqlflow/doc/design/codegen_couler_use_ir.md', 'sqlflow/doc/design/couler_sqlflow.md', 'sqlflow/doc/design/high_available_sqlflow_server.md', 'sqlflow/doc/design/model_zoo_pai.md', 'sqlflow/java/parser/README.md', 'sqlflow/pkg/sql/tpp/README.md', 'sqlflow/python/couler/README.md', 'sqlflow/doc/design/workflow.md']
+classes: wide
+
+include: ["pages", "doc"]
 
 search_enabled: true
-search_tokenizer_separator: /[\s/]+/
 
-heading_anchors: true
+title: 'Sqlflow'
+
+destination: 'docs'
+
+ga_tracking: UA-17331483-8
 
 aux_links:
   "GitHub":
     - "https://github.com/sql-machine-learning/sqlflow"
 
+# baseurl: "/sql-machine-learning.github.io/"
 
 remote_theme: pmarsceill/just-the-docs
 classes: wide
@@ -362,7 +366,7 @@ defaults:
       nav_exclude: false
       parent: ElasticDL
       nav_order: 10
-  
+
 footer:
   links:
     - label: "GitHub"
@@ -376,17 +380,3 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-seo-tag
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
-
-relative_links:
-  enabled:     true
-  collections: true
-
